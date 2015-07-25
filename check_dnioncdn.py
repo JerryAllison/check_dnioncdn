@@ -1,6 +1,6 @@
 #!/usr/bin/evn python
 #coding: utf-8
-#filename: check_cdn_domain.py
+#filename: check_dnioncdn.py
 #author = 'jla'
 #date = '2015-07-22'
 

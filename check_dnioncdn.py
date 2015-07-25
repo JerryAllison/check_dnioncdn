@@ -124,10 +124,10 @@ def Usage():
 	help = """
 使用帮助：
   方法一：查询所有的加速域名
-  #python check_dnioncdn_domain all
+  #python check_dnioncdn.py all
 
   方法二：查询某一个加速域名所有节点的状态
-  #python check_dnioncdn_domain images.himoca.com images/datePicker.jpg
+  #python check_dnioncdn.py images.sina.com images/testcdn.jpg
 	"""
 	return help
 

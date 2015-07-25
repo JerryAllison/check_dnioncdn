@@ -17,7 +17,7 @@ import re
   2、通过API接口查询到每个域名的所有节点服务器ip地址
   3、用HTTP协议去get这个检测文件，如果HTTP返回码不为404，则表示节点状态良好
 
-注：请再 values 里填写dnion cdn的用户标识码
+注：请在 values 里填写dnion cdn的用户标识码
 """
 
 # 定义打印字体颜色
@@ -33,7 +33,7 @@ BOLD = "\033[1m"
 # 变量定义
 URL_query = "http://ip.taobao.com/service/getIpInfo.php?ip="
 url = 'http://push.dnion.com/domain.do'
-values = {'captcha': ''}
+values = {'captcha': '用户标识码'}
 ip_url = 'http://push.dnion.com/currentIp.do'
 domain = {'domain': ''}
 err_ip = []

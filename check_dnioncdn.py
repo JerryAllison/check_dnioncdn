@@ -132,19 +132,19 @@ def Usage():
 	return help
 
 def run():
-	search = r'[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(/.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+/.?'
-	url = re.match(search, sys.argv[1])
+	pattern = re.compile(r'\w+(\.\w+)+\.(com|com.cn|edu|cn|net)')
+	url = pattern.match(sys.argv[1])
 	if len(sys.argv) == 2 and sys.argv[1] == 'all':
 		print "All Domain:"
 		get_cdn_domain(1)
 	elif len(sys.argv) == 3:
 		if url:
-			print "Domain Error！\nSorry Goodbye!"
-			sys.exit(0)
-		else:
 			print "Domain Checking......"
 			check_domain(sys.argv[1])
 			get_single_domain(sys.argv[1], sys.argv[2])
+		else:
+			print "Domain Error！\nSorry Goodbye!"
+			sys.exit(0)
 	else:
 		print FAIL + "Argument Error！" + ENDC
 		print Usage()

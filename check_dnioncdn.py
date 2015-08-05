@@ -55,7 +55,7 @@ def query_ip_info(ip):
             data = data['data']
             return '('+ data['country'] + '/' + data['area'] + '/' + data['region'] + '/' + data['city'] + '/' + data['isp'] + ')'
         else:
-            return "Query Failure: ", data['data']
+            return 'Query Failure: ', data['data']
 
 # url状态检测
 def  url_check(ip, url, domain):

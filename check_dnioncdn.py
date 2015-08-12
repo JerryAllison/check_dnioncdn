@@ -1,4 +1,4 @@
-#!/usr/bin/evn python
+#!/usr/bin/env python
 #coding: utf-8
 #Filename: check_dnioncdn.py
 #Author: 'Kevin Tan'

@@ -33,7 +33,7 @@ BOLD = '\033[1m'
 # 变量定义
 URL_query = 'http://ip.taobao.com/service/getIpInfo.php?ip='
 url = 'http://push.dnion.com/domain.do'
-values = {'captcha': ''}    // 通过查询帝联CDN的管理后台得到用户标识码
+values = {'captcha': ''}    # 通过查询帝联CDN的管理后台得到用户标识码
 ip_url = 'http://push.dnion.com/currentIp.do'
 domain = {'domain': ''}
 err_ip = []
